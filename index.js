@@ -2,9 +2,9 @@ if(location.search === "") {
     window.location.href = "https://testpath9.github.io/testpath9/"
 }
 
-document.getElementById("test").onclick = () => {
+const url = new URL(location.href);
+if (url.searchParams.has("timer")) {
     setTimeout(() => {
-        const url = new URL(location.href);
         url.searchParams.set("q", "0");
         history.replaceState(null, "", url.href);
     }, 1000);
