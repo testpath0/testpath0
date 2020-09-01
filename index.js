@@ -1,9 +1,5 @@
-const link = document.getElementById("link");
-console.log(location.hostname)
-if (location.hostname === "test123.run") {
-    link.href = "https://best123.run:8081/"
-} else {
-    link.href = "https://test123.run:8080/"
+if(location.search === "") {
+    window.location.href = "https://testpath9.github.io/testpath9/"
 }
 
 // sample arguments for registration
